@@ -1,4 +1,4 @@
-== Description
+# Description
 UNICLI is a Desktop Gui App that mornitor multiple token pair's price at the same time.
 The pair price infomation is real time, retrieved from info.uniswap.org
 Each pair's info
@@ -19,16 +19,18 @@ Why need a Desktop Client App?
 
  The UNICLI retrieve data from UniServer, and UniServer retrieve data from uniswap.org.
 
-= Challenge.
+# Challenge.
  This project include two part: Desktop App and Server daemon.
  The Desktop App use Qt framework and C++ language. The Server daemon use Golang and Redis.
  CLI and Server communicate with protobuffer and GRPC protocol. 
  So the work include:
-  1. capture data from uniswap.org in realtime.
-  2. Store the pairs data to Redis.
-  3. Design the data's scheme for Redis.
-  4. Design the protobuffer protocol between Server and CLI
-  5. Design the CLI's UX
-  6. Qt's adaption for protobuffer.
-  7. CLI design and implement Price view graph.
-  8. CLI desgin pairs management and monitor logic.
+  - capture data from uniswap.org in realtime.
+  - Store the pairs data to Redis.
+  - Design the data's scheme for Redis.
+  - Design the protobuffer protocol between Server and CLI
+  - Design the CLI's UX
+  - Qt's adaption for protobuffer.
+  - CLI design and implement Price view graph.
+  - CLI desgin pairs management and monitor logic.
+
+<img src="./assets/demo1.gif">
