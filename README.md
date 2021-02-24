@@ -34,4 +34,4 @@ Why need a Desktop Client App?
   - CLI desgin pairs management and monitor logic.
 
 <img src="./assets/demo1.gif">
-<img src='https://goreportcard.com/badge/github.com/achannarasappa/ticker' alt='Report Card' />
+<img src="./assets/demo2.gif">
