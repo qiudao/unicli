@@ -32,6 +32,7 @@ Why need a Desktop Client App?
   - Qt's adaption for protobuffer.
   - CLI design and implement Price view graph.
   - CLI desgin pairs management and monitor logic.
+  - Run on Windows, Linux, Mac os.
 
 <img src="./assets/demo1.gif">
 <img src="./assets/demo2.gif">
