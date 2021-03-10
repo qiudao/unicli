@@ -1,4 +1,4 @@
-all: token
+all: pair
 
 factory:
 	@curl -g \
@@ -10,6 +10,9 @@ factory:
 
 token:
 	go run token.go graphql.go
+
+pair:
+	go run pair.go graphql.go
 
 CHI:
 	./query "{tokens(id: \"0x00cb166e39a77a693146a13536f72f5bef689511\") { id name symbol decimals}}" 
