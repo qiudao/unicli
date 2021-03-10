@@ -12,16 +12,16 @@ func main() {
 
 	// make a request
 	req := NewRequest(`    
-		query ($key: String!) {
-		pair(id:$key) {
-		id
-		reserve0
+		query {
+		token(id: "0x6b175474e89094c44da98b954eedeac495271d0f") {
+			name
+			symbol
+			decimals
+			tradeVolumeUSD
+			totalLiquidity
 		}
 		}
 		`)
-
-	// set any variables
-	req.Var("key", "0xa478c2975ab1ea89e8196811f51a7b7ade33eb11")
 
 	// set header fields
 	req.Header.Set("Cache-Control", "no-cache")

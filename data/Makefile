@@ -11,8 +11,8 @@ factory:
 token:
 	go run token.go graphql.go
 
-pair:
-	go run pair.go graphql.go
+pairall:
+	go run pairall.go graphql.go
 
 swap:
 	go run swap.go graphql.go
