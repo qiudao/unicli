@@ -1,4 +1,4 @@
-all: pairday
+all: tokenall
 
 factory:
 	@curl -g \
@@ -10,6 +10,9 @@ factory:
 
 token:
 	go run token.go graphql.go
+	
+tokenall:
+	go run tokenall.go graphql.go
 
 pairall:
 	go run pairall.go graphql.go
