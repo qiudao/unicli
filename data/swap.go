@@ -13,8 +13,8 @@ func main() {
 	// make a request
 	req := NewRequest(`    
 				query {
-				pairs(first: 1000, orderBy: reserveUSD, orderDirection: desc) {
-				 id
+				swaps(orderBy: timestamp, orderDirection: desc, where: {pair:"0xa478c2975ab1ea89e8196811f51a7b7ade33eb11"} ) {
+					to 
 				}
 				}
 		`)
