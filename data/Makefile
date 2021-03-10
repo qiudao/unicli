@@ -1,4 +1,4 @@
-all: tokenall
+all: pairswap
 
 factory:
 	@curl -g \
@@ -13,6 +13,9 @@ token:
 	
 tokenall:
 	go run tokenall.go graphql.go
+
+pairswap:
+	go run pairswaps.go graphql.go
 
 pairall:
 	go run pairall.go graphql.go
